@@ -1,0 +1,15 @@
+language: python
+
+# which versions of python to test against
+python:
+  - "2.7"
+  - "3.3"
+
+# command to install dependencies
+install:
+#  - pip install codecov
+  - pip install coverage
+
+# run
+script:
+  - coverage run test.py # command to run code coverage
