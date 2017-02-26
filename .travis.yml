@@ -13,12 +13,7 @@ install:
 # run
 script:
   - coverage run test.py # command to run code coverage
-<<<<<<< HEAD
 
 #
 after_success:
   - codecov
-=======
-  
-#
->>>>>>> 009109f2af40d5a61e6bff28819e845e2b512b2d
