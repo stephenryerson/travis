@@ -7,9 +7,13 @@ python:
 
 # command to install dependencies
 install:
-#  - pip install codecov
+  - pip install codecov
   - pip install coverage
 
 # run
 script:
   - coverage run test.py # command to run code coverage
+
+#
+after_success:
+  - codecov
